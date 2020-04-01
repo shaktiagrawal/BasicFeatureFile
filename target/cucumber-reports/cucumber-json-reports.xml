@@ -1,0 +1,197 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-23T11:31:21.816Z",
+        "line": 3,
+        "name": "Get the list of users",
+        "description": "",
+        "id": "test-reqres-apis;get-the-list-of-users",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1302263200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the baseURI for the API is \"https://reqres.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDef.StepDef.the_baseURI_for_the_API_is(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1519687900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the get endPoint is \"api/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"api/users\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDef.StepDef.the_get_endPoint_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14991300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user sends get request to \"page\" that is 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 30
+                },
+                {
+                  "val": "2",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDef.StepDef.the_user_sends_get_request_to_that_is(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60870000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status code appears to be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDef.StepDef.the_status_code_appears_to_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32980600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Show the response",
+            "match": {
+              "location": "stepDef.StepDef.show_the_response()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-23T11:31:24.839Z",
+        "line": 10,
+        "name": "Post a request to create a user",
+        "description": "   \tGiven: the baseURI for the API is \"https://reqres.in/\"",
+        "id": "test-reqres-apis;post-a-request-to-create-a-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25984800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user sends the data:",
+            "match": {
+              "location": "stepDef.StepDef.the_user_sends_the_data(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "Shakti"
+                ]
+              },
+              {
+                "cells": [
+                  "job",
+                  "QE"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 773560000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the post endPoint is \"api/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"api/users\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDef.StepDef.the_post_endPoint_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1998100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the status code appears to be 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDef.StepDef.the_status_code_appears_to_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Show the response",
+            "match": {
+              "location": "stepDef.StepDef.show_the_response()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Test ReqRes APIs",
+    "description": "",
+    "id": "test-reqres-apis",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/a.feature",
+    "tags": []
+  }
+]
