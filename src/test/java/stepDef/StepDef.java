@@ -23,7 +23,7 @@ public class StepDef {
 	@Given("the baseURI for the API is {string}")
 	public void the_baseURI_for_the_API_is(String string) {
 		RestAssured.baseURI = string;
-		
+		System.out.println();		
 	}
 
 	@Given("the get endPoint is {string}")
